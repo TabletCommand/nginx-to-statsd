@@ -36,7 +36,7 @@ func ParseNginxLog(line string) (map[string]string, error) {
 func main() {
 	var host = flag.String("host", "localhost", "StatsD host")
 	var port = flag.Int("port", 8125, "StatsD port")
-	var prefix = flag.String("prefix", "nginx.access", "StatsD metrics prefix")
+	var prefix = flag.String("prefix", "nginx.access.log", "StatsD metrics prefix")
 	var file = flag.String("file", "/var/log/nginx/access.log", "Nginx log file")
 
 	flag.Parse()
