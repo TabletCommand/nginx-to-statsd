@@ -12,7 +12,7 @@ import (
 	"gopkg.in/alexcesaro/statsd.v2"
 )
 
-// Parse ngin log until http referer
+// Parse nginx log until http referer.
 // More info here: http://nginx.org/en/docs/http/ngx_http_log_module.html
 var r = regexp.MustCompile(`^(?P<remote>[^ ]*) (?P<host>[^ ]*) (?P<user>[^ ]*) \[(?P<time>[^\]]*)\] "(?P<method>\S+)(?: +(?P<path>[^ ]*) +\S*)?" (?P<code>[^ ]*) (?P<size>[^ ]*)`)
 
